@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ViewModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="PATI_OUT_VISIT_FZ">
+          <Key>
+            <PropertyRef Name="FZLSH" />
+          </Key>
+          <Property Name="FZLSH" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="FZXH" Type="varchar" MaxLength="50" />
+          <Property Name="MZLSH" Type="varchar" MaxLength="50" />
+          <Property Name="PATINAME" Type="varchar" MaxLength="50" />
+          <Property Name="PATIID" Type="varchar" MaxLength="50" />
+          <Property Name="HJBZ" Type="varchar" MaxLength="50" />
+          <Property Name="FZSJ" Type="datetime" />
+          <Property Name="FZYS" Type="varchar" MaxLength="50" />
+          <Property Name="FZKS" Type="varchar" MaxLength="50" />
+          <Property Name="FZLX" Type="varchar" MaxLength="10" />
+          <Property Name="FZRY" Type="varchar" MaxLength="50" />
+          <Property Name="SJLX" Type="varchar" MaxLength="10" />
+          <Property Name="YYSJ" Type="varchar" MaxLength="10" />
+          <Property Name="ZFSJ" Type="datetime" />
+          <Property Name="ZFRY" Type="varchar" MaxLength="50" />
+          <Property Name="HJSX" Type="nchar" MaxLength="10" />
+          <Property Name="RESTYPEID" Type="varchar" MaxLength="50" />
+          <Property Name="LOCORGID" Type="varchar" MaxLength="50" />
+          <Property Name="STARTTIME" Type="datetime" />
+          <Property Name="ENDTIME" Type="datetime" />
+          <Property Name="INPUTEMPID" Type="varchar" MaxLength="50" />
+          <Property Name="VISITTYPE" Type="varchar" MaxLength="50" />
+          <Property Name="CALLTIME" Type="datetime" />
+          <Property Name="RESID" Type="varchar" MaxLength="50" />
+          <Property Name="BILLFLAG" Type="char" MaxLength="1" />
+          <Property Name="YSXH" Type="varchar" MaxLength="50" />
+          <Property Name="DUTY_ID" Type="varchar" MaxLength="50" />
+          <Property Name="RSRCTYPEID" Type="varchar" MaxLength="50" />
+          <Property Name="RSRCTYPE" Type="varchar" MaxLength="50" />
+          <Property Name="FZNOTICE" Type="varchar" MaxLength="50" />
+          <Property Name="SERIALNUMBER" Type="varchar" MaxLength="50" />
+          <Property Name="expert_flag" Type="varchar" MaxLength="8" />
+          <Property Name="duty_mae" Type="varchar" MaxLength="1" />
+          <Property Name="TRIAGE_FLAG" Type="int" />
+        </EntityType>
+        <EntityContainer Name="ViewModelStoreContainer">
+          <EntitySet Name="PATI_OUT_VISIT_FZ" EntityType="Self.PATI_OUT_VISIT_FZ" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ViewModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="PATI_OUT_VISIT_FZ">
+          <Key>
+            <PropertyRef Name="FZLSH" />
+          </Key>
+          <Property Name="FZLSH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FZXH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MZLSH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PATINAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PATIID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HJBZ" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FZSJ" Type="DateTime" Precision="3" />
+          <Property Name="FZYS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FZKS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FZLX" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="FZRY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SJLX" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="YYSJ" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ZFSJ" Type="DateTime" Precision="3" />
+          <Property Name="ZFRY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HJSX" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="RESTYPEID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LOCORGID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STARTTIME" Type="DateTime" Precision="3" />
+          <Property Name="ENDTIME" Type="DateTime" Precision="3" />
+          <Property Name="INPUTEMPID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VISITTYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CALLTIME" Type="DateTime" Precision="3" />
+          <Property Name="RESID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BILLFLAG" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="YSXH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DUTY_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RSRCTYPEID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RSRCTYPE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FZNOTICE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SERIALNUMBER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="expert_flag" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="duty_mae" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TRIAGE_FLAG" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="hospitalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="PATI_OUT_VISIT_FZ" EntityType="Self.PATI_OUT_VISIT_FZ" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ViewModelStoreContainer" CdmEntityContainer="hospitalEntities">
+          <EntitySetMapping Name="PATI_OUT_VISIT_FZ">
+            <EntityTypeMapping TypeName="ViewModel.PATI_OUT_VISIT_FZ">
+              <MappingFragment StoreEntitySet="PATI_OUT_VISIT_FZ">
+                <ScalarProperty Name="FZLSH" ColumnName="FZLSH" />
+                <ScalarProperty Name="FZXH" ColumnName="FZXH" />
+                <ScalarProperty Name="MZLSH" ColumnName="MZLSH" />
+                <ScalarProperty Name="PATINAME" ColumnName="PATINAME" />
+                <ScalarProperty Name="PATIID" ColumnName="PATIID" />
+                <ScalarProperty Name="HJBZ" ColumnName="HJBZ" />
+                <ScalarProperty Name="FZSJ" ColumnName="FZSJ" />
+                <ScalarProperty Name="FZYS" ColumnName="FZYS" />
+                <ScalarProperty Name="FZKS" ColumnName="FZKS" />
+                <ScalarProperty Name="FZLX" ColumnName="FZLX" />
+                <ScalarProperty Name="FZRY" ColumnName="FZRY" />
+                <ScalarProperty Name="SJLX" ColumnName="SJLX" />
+                <ScalarProperty Name="YYSJ" ColumnName="YYSJ" />
+                <ScalarProperty Name="ZFSJ" ColumnName="ZFSJ" />
+                <ScalarProperty Name="ZFRY" ColumnName="ZFRY" />
+                <ScalarProperty Name="HJSX" ColumnName="HJSX" />
+                <ScalarProperty Name="RESTYPEID" ColumnName="RESTYPEID" />
+                <ScalarProperty Name="LOCORGID" ColumnName="LOCORGID" />
+                <ScalarProperty Name="STARTTIME" ColumnName="STARTTIME" />
+                <ScalarProperty Name="ENDTIME" ColumnName="ENDTIME" />
+                <ScalarProperty Name="INPUTEMPID" ColumnName="INPUTEMPID" />
+                <ScalarProperty Name="VISITTYPE" ColumnName="VISITTYPE" />
+                <ScalarProperty Name="CALLTIME" ColumnName="CALLTIME" />
+                <ScalarProperty Name="RESID" ColumnName="RESID" />
+                <ScalarProperty Name="BILLFLAG" ColumnName="BILLFLAG" />
+                <ScalarProperty Name="YSXH" ColumnName="YSXH" />
+                <ScalarProperty Name="DUTY_ID" ColumnName="DUTY_ID" />
+                <ScalarProperty Name="RSRCTYPEID" ColumnName="RSRCTYPEID" />
+                <ScalarProperty Name="RSRCTYPE" ColumnName="RSRCTYPE" />
+                <ScalarProperty Name="FZNOTICE" ColumnName="FZNOTICE" />
+                <ScalarProperty Name="SERIALNUMBER" ColumnName="SERIALNUMBER" />
+                <ScalarProperty Name="expert_flag" ColumnName="expert_flag" />
+                <ScalarProperty Name="duty_mae" ColumnName="duty_mae" />
+                <ScalarProperty Name="TRIAGE_FLAG" ColumnName="TRIAGE_FLAG" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
