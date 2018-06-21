@@ -142,9 +142,6 @@ namespace HospitalWaitAreaShow.ViewModel
             });
 
             ParseDataFromBase(datalist);
-
-            //GetData(_dateInfo);
-
             UpdateInterface();
 
 
